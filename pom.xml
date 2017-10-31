@@ -467,11 +467,12 @@
 			</dependency>
 			<!-- Adobe AEM Dependencies -->
 			<dependency>
-				<groupId>com.adobe.aem</groupId>
-				<artifactId>uber-jar</artifactId>
-				<version>6.2.0</version>
-				<scope>provided</scope>
-			</dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.2.0-SP1</version>
+    <classifier>apis</classifier>
+    <scope>provided</scope>
+</dependency>
 			<dependency>
 				<groupId>com.adobe.cq</groupId>
 				<artifactId>core.wcm.components.all</artifactId>
