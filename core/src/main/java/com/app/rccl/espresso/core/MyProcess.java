@@ -1,20 +1,23 @@
 package com.app.rccl.espresso.core;
-
 import com.day.cq.workflow.WorkflowException;
 import com.day.cq.workflow.WorkflowSession;
 import com.day.cq.workflow.exec.WorkItem;
 import com.day.cq.workflow.exec.WorkflowData;
 import com.day.cq.workflow.exec.WorkflowProcess;
 import com.day.cq.workflow.metadata.MetaDataMap;
+import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Properties;
+import org.apache.felix.scr.annotations.Property;
+import org.apache.felix.scr.annotations.Service;
 import org.osgi.framework.Constants;
-import org.osgi.service.component.annotations.Component;
 import javax.jcr.Node;
 import javax.jcr.RepositoryException;
 
-@Component(service = WorkflowProcess.class, immediate = true, property = {
-
-		Constants.SERVICE_DESCRIPTION + "=A sample workflow process implementation",
-		Constants.SERVICE_VENDOR + "= Adobe", "process.label=" + "My Sample Workflow Process" })
+@Component
+@Service
+@Properties({ @Property(name = Constants.SERVICE_DESCRIPTION, value = "A sample workflow process implementation."),
+		@Property(name = Constants.SERVICE_VENDOR, value = "Adobe"),
+		@Property(name = "process.label", value = "My Sample Workflow Process") })
 public class MyProcess implements WorkflowProcess {
 
 	private static final String TYPE_JCR_PATH = "JCR_PATH";

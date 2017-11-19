@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/apps/espresso"/>
-    <filter root="/apps/sling" />
-    <filter root="/etc/designs/espresso"/>
+	<filter root="/apps/espresso" />
+	<filter root="/apps/sling" />
+	<filter root="/etc/designs/espresso" />
+	<filter root="/etc/workflow/models/stockalert" />
+	<filter root="/etc/workflow/launcher/config" />
+	<filter root="/etc/importers/polling/adobe_stock" />
 </workspaceFilter>
