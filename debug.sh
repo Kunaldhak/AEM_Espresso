@@ -1,0 +1,1 @@
+java -Xmx2g -agentlib:jdwp=transport=dt_socket,address=30303,server=y,suspend=n -jar /Users/kunal/Documents/Developer_Resources/AEM/AEM65/Author/cq-author-p4502.jar -Dsling.run.modes=author,localhost,local
